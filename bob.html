@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Me</title>
+  </head>
+  <body>
+    <label for="item">FirstName</label>
+    <input type="text" id="fname" />
+    <button onclick="myFunction_first()">Click to submit</button>
+    <br />
+    <label for="item">LastName</label>
+    <input type="text" id="Lname" />
+    <button onclick="myFunction_last()">Click to submit</button>
+    <br />
+    <label for="item">Age</label>
+    <input type="text" id="Age" />
+    <button onclick="myFunction_aGe()">Click to submit</button>
+    <script>
+      function myFunction_first() {
+        let firstName = document.getElementById("fname").value;
+        // let lastName = document.getElementById("Lname").value;
+        // let age = document.getElementById("Age").value;
+        // console.log(firstName);
+        let length = firstName.length;
+        if (length > 0) {
+          alert("Valid");
+        } else {
+          alert("Not valid");
+        }
+      }
+      function myFunction_last() {
+        let lastName = document.getElementById("Lname").value;
+        // let lastName = document.getElementById("Lname").value;
+        // let age = document.getElementById("Age").value;
+        // console.log(firstName);
+        let length = lastName.length;
+        if (length > 0) {
+          alert("Valid");
+        } else {
+          alert("Not valid");
+        }
+      }
+      function myFunction_aGe() {
+        let age = document.getElementById("Age").value;
+        // let lastName = document.getElementById("Lname").value;
+        // let age = document.getElementById("Age").value;
+        // console.log(firstName);
+        let length = age.length;
+        age_1 = parseInt(age);
+        if (length > 0 && age_1 > 0 && age_1 < 100) {
+          alert("valid");
+        } else {
+          alert("not valid");
+        }
+      }
+
+      // alert(firstName);
+    </script>
+  </body>
+</html>
